@@ -9,7 +9,7 @@ config = GPT2Config.from_pretrained("gpt2")
 model = GPT2LMHeadModel.from_pretrained("gpt2", config=config)
 
 # Define split point
-split_layer = 6
+#split_layer = 6
 
 class ServerModel(GPT2LMHeadModel):
     def __init__(self, model, split_layer):
